@@ -4,9 +4,6 @@ use tower_http::trace::TraceLayer;
 use anyhow::Result;
 use tower::ServiceBuilder;
 
-#[derive(Clone)]
-struct State {}
-
 #[tokio::main]
 async fn main() -> Result<()> {
     tracing_subscriber::fmt::init();
